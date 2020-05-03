@@ -7,16 +7,26 @@ public class Client {
     private String nume;
     private String prenume;
     private List<Produs> produse = new ArrayList<>();
+    private Plata plata;
 
     public Client(String nume, String prenume) {
         this.nume = nume;
         this.prenume = prenume;
     }
 
-    public Client(String nume, String prenume, List<Produs> produse) {
+    public Plata getPlata() {
+        return plata;
+    }
+
+    public void setPlata(Plata plata) {
+        this.plata = plata;
+    }
+
+    public Client(String nume, String prenume, List<Produs> produse, Plata plata) {
         this.nume = nume;
         this.prenume = prenume;
         this.produse = produse;
+        this.plata=plata;
     }
 
     public List<Produs> getProduse() {

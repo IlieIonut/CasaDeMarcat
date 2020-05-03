@@ -37,10 +37,9 @@ public class Plata {
 
     @Override
     public String toString() {
-        return "plata{" +
+        return
                 "cash=" + cash +
                 ", card=" + card +
-                ", bonuri_valorice=" + bonuri_valorice +
-                '}';
+                ", bonuri_valorice=" + bonuri_valorice ;
     }
 }

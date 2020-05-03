@@ -28,7 +28,7 @@ public class Help extends CasaDeMarcatHelper {
         Client client1 = new Client("Ilie","Ionut");
         clients.add(client1);
         clients.get(0).setProduse(products);
-
+        clients.get(0).setPlata(plata1);
         Produs produsList2 = new Produs("ciocolata",4.57);
         Produs produsList3 = new Produs("lapte",6.2);
         products2.add(produsList2);
@@ -38,8 +38,7 @@ public class Help extends CasaDeMarcatHelper {
                 "Magazin1",
                 "Pitesti",
                 clients,
-                plata,
-                products
+                products2
                 );
     }
 }
