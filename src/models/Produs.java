@@ -3,8 +3,15 @@ package models;
 public class Produs {
     private  String NumeProdus;
     private double PretProdus;
+    private int IdProdus;
 
     public Produs(String numeProdus, double pretProdus) {
+        NumeProdus = numeProdus;
+        PretProdus = pretProdus;
+    }
+
+    public Produs(int idProdus,String numeProdus, double pretProdus) {
+        IdProdus=idProdus;
         NumeProdus = numeProdus;
         PretProdus = pretProdus;
     }
@@ -27,9 +34,10 @@ public class Produs {
 
     @Override
     public String toString() {
-        return "produs{" +
+        return "Produs{" +
                 "NumeProdus='" + NumeProdus + '\'' +
                 ", PretProdus=" + PretProdus +
+                ", IdProdus=" + IdProdus +
                 '}';
     }
 }

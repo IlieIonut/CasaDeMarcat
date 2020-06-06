@@ -15,7 +15,7 @@ public class CasaDeMarcatImplementare implements contracts.CasaDeMarcat {
     private List<Client> Clienti = new ArrayList<>();
     private List<Plata> Plati = new ArrayList<>();
     private List<Produs> Produse = new ArrayList<>();
-
+    public CasaDeMarcatImplementare(){}
     public CasaDeMarcatImplementare(String numeMagazinCasa, String locatieMagazin) {
         NumeMagazinCasa = numeMagazinCasa;
         LocatieMagazin = locatieMagazin;
